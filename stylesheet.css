@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.logo{
+    height: 100px;
+    margin-left: 50px;
+}
+
+nav ul{
+    list-style-type: none;
+    height: 0;
+    overflow: hidden;
+    transition: all .3s ease-out 0s;
+}
+nav::before{
+    content:".";
+    color: transparent;
+    display: block;
+    height: 38px;
+    background-image: url(https://tatsuya-lab.com/wp-content/uploads/2020/03/hamburger_1.png);
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: 10px center;
+}
+.on ul{
+    height: calc(38px * 4);
+    transition: all .3s ease-out 0s;
+}
+nav a{
+    display: block;
+    text-decoration: none;
+    font-size: 14px;
+}
+
